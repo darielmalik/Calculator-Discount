@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator-Diskon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Kalkulator Diskon</h1>
+        <div class="input-grup">
+            <label for="price">Harga barang (Rp):</label>
+            <input type="text" id="price" placeholder="Masukkan harga" required>
+        </div>
+        <div class="input-grup">
+            <label for="discount">Persentase diskon (%):</label>
+            <input type="number" id="discount" placeholder="Masukkan diskon" required>
+        </div>
+        <div class="button-grup">
+            <button onclick="calculateDiscount()">Calculate</button>
+            <button onclick="resetCalculator()">Reset</button>
+        </div>
+        <div id="result"></div>
+        <div id="error" class="error"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
